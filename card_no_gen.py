@@ -11,12 +11,10 @@ def check(x):
     elif (l%2)==0:
         g=1
         h=0
-    for i in range(h,l-1,2):
-        a=int(s[i])
-        sum=sum+(a*2)
+    for i in range(h,l-1,2):        
+        sum=sum+(((int(s[i]))*2)%10)+(((int(s[i]))*2)//10)    
     for i in range(g,l,2):
-        a=int(s[i])
-        sum=sum+a
+        sum=sum+int(s[i])
     if (sum%10)==0:
         return 0
     else:
@@ -45,7 +43,15 @@ def visa(L):
             c=1
     return n
 
-#example:
-#list=[12412314124,4123412414,12414134124,124124124124124]
-#number1=(mastercard(list))
-#number2=(visa(list))
+
+'''Enter the existing cards numbers as integers in a list and pass the list
+as paramter while calling either of the card generator functions'''
+
+
+
+'''example:
+list=[12412314124,4123412414,12414134124,124124124124124]
+number1=(mastercard(list))
+number2=(visa(list))
+print(number1)
+print(number2)'''
