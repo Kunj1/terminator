@@ -44,7 +44,8 @@ def visa(L):
     return n
 
 
-'''Enter the existing cards numbers as integers in a list and pass the list
+'''Instruction:
+Enter the existing cards numbers as integers in a list and pass the list
 as paramter while calling either of the card generator functions'''
 
 
